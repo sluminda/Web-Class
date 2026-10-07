@@ -39,14 +39,10 @@ The coursework will be organized by week to make files easy to locate and review
 Web-Class/
 │
 ├── Week-01/
-│   ├── Assignment/
-│   ├── Quiz/
-│   └── Other-Files/
+│   ├── 
 │
 ├── Week-02/
-│   ├── Assignment/
-│   ├── Quiz/
-│   └── Other-Files/
+│   ├── 
 │
 ├── Week-03/
 │   └── ...
@@ -62,12 +58,12 @@ The folder structure may be adjusted depending on the coursework assigned each w
 
 | Week | Assignment | Quiz |
 |:---:|:---:|:---:|
-| Week 01 | ✅ | ✅ |
-| Week 02 | ✅ | ✅ |
-| Week 03 | ✅ | ✅ |
-| Week 04 | ✅ | ✅ |
-| Week 05 | ✅ | ✅ |
-| Week 06 | ⏳ | ⏳ |
+| Week 01 | ✅ | ➖ |
+| Week 02 | ✅ | ➖ |
+| Week 03 | ✅ | ➖ |
+| Week 04 | ✅ | ➖ |
+| Week 05 | ✅ | ➖ |
+| Week 06 | ⏳ | ➖ |
 
 > **Legend:** ✅ Completed · ⏳ Pending · ➖ Not Assigned
 

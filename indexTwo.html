@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+            min-height:100vh;
+            background:linear-gradient(135deg,#eef2ff,#fdf2f8);
+            padding:50px 20px;
+        }
+        .main_container{
+            max-width:1150px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:28px;
+        }
+        .product-card{
+            background:#fff;
+            border:1px solid #e8e8ee;
+            border-radius:25px;
+            overflow:hidden;
+            box-shadow:0 8px 25px rgba(50,50,93,.08);
+            transition:transform .35s ease,box-shadow .35s ease;
+        }
+        .product-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 20px 45px rgba(50,50,93,.16);
+        }
+        .image-box{
+            height:260px;
+            margin:12px;
+            border-radius:18px;
+            background:linear-gradient(135deg,#f3f4ff,#e9e7ff);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            overflow:hidden;
+        }
+        .image-box img{
+            width:88%;
+            height:88%;
+            object-fit:contain;
+            transition:transform .4s ease;
+        }
+        .product-card:hover .image-box img{
+            transform:scale(1.1) rotate(-2deg);
+        }
+        .product-info{
+            padding:15px 24px 25px;
+        }
+        .category{
+            display:inline-block;
+            font-size:11px;
+            font-weight:bold;
+            letter-spacing:1.4px;
+            color:#6c5ce7;
+            background:#f0edff;
+            padding:6px 10px;
+            border-radius:20px;
+            margin-bottom:13px;
+        }
+        h2{
+            color:#242435;
+            font-size:23px;
+            margin-bottom:9px;
+        }
+        .description{
+            color:#7c7c8a;
+            font-size:14px;
+            line-height:1.6;
+            margin-bottom:22px;
+        }
+        .bottom{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-top:1px solid #eeeef3;
+            padding-top:18px;
+        }
+        .price{
+            color:#6c5ce7;
+            font-size:23px;
+            font-weight:bold;
+        }
+        button{
+            border:2px solid #6c5ce7;
+            background:transparent;
+            color:#6c5ce7;
+            padding:10px 16px;
+            border-radius:50px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:background .3s ease,color .3s ease,transform .2s ease;
+        }
+        button:hover{
+            background:#6c5ce7;
+            color:#fff;
+            transform:scale(1.05);
+        }
+        @media screen and (max-width:1000px){
+            .main_container{
+                grid-template-columns:repeat(2,1fr);
+            }
+        }
+        @media screen and (max-width:650px){
+            body{
+                padding:30px 15px;
+            }
+            .main_container{
+                grid-template-columns:1fr;
+            }
+            .product-card{
+                max-width:400px;
+                width:100%;
+                margin:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main_container">
+    <div class="product-card">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Red running shoe">
+        </div>
+        <div class="product-info">
+            <p class="category">SPORT SHOES</p>
+            <h2>Velocity Red</h2>
+            <p class="description">Comfortable everyday sneakers designed for active lifestyles.</p>
+            <div class="bottom">
+                <span class="price">$119</span>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=700" alt="Casual sneakers">
+        </div>
+        <div class="product-info">
+            <p class="category">CASUAL SHOES</p>
+            <h2>Street Classic</h2>
+            <p class="description">Clean and versatile sneakers made for everyday city wear.</p>
+            <div class="bottom">
+                <span class="price">$89</span>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=700" alt="Modern sneaker">
+        </div>
+        <div class="product-info">
+            <p class="category">LIFESTYLE</p>
+            <h2>Metro Flex</h2>
+            <p class="description">Modern sneakers combining lightweight materials and soft comfort.</p>
+            <div class="bottom">
+                <span class="price">$135</span>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=700" alt="Brown sneaker">
+        </div>
+        <div class="product-info">
+            <p class="category">PREMIUM</p>
+            <h2>Heritage Walk</h2>
+            <p class="description">Premium casual footwear with a timeless and minimal design.</p>
+            <div class="bottom">
+                <span class="price">$149</span>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=700" alt="Athletic sneaker">
+        </div>
+        <div class="product-info">
+            <p class="category">TRAINING</p>
+            <h2>Power Move</h2>
+            <p class="description">Supportive training shoes built for workouts and daily movement.</p>
+            <div class="bottom">
+                <span class="price">$109</span>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=700" alt="White sneakers">
+        </div>
+        <div class="product-info">
+            <p class="category">ESSENTIALS</p>
+            <h2>Cloud White</h2>
+            <p class="description">Simple white sneakers with a lightweight feel and clean finish.</p>
+            <div class="bottom">
+                <span class="price">$99</span>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
